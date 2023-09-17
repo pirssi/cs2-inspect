@@ -6,7 +6,11 @@
 // @match        *://steamcommunity.com/profiles/*/inventory*
 // @match        *://steamcommunity.com/market/listings/730/*
 // @grant        none
-// @author       https://github.com/pirssi
+// @author       pirssi
+// @downloadURL  https://github.com/pirssi/cs2-inspect/raw/main/cs2inspect.user.js
+// @updateURL    https://github.com/pirssi/cs2-inspect/raw/main/cs2inspect.user.js
+// @supportURL   https://github.com/pirssi/cs2-inspect
+// @homepageURL  https://github.com/pirssi/cs2-inspect
 // ==/UserScript==
 
 // Whether you want to show Inspect links for both CS:GO ("Inspect in game...") and CS2
