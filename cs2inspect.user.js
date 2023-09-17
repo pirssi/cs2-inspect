@@ -13,11 +13,10 @@
 // @homepageURL  https://github.com/pirssi/cs2-inspect
 // ==/UserScript==
 
-// Whether you want to show Inspect links for both CS:GO ("Inspect in game...") and CS2
+// Whether you want to show Inspect links for both CS:GO ('Inspect in game...') and CS2 ('Inspect in CS2...')
 // (set to "true" or "1" to show both, "false" or "0" to show only the CS2 link)
-// NOTE: setting this to "false" causes some errors in the browser console that I can't be arsed to fix
-
-const DO_YOU_WANT_TO_SHOW_BOTH_INSPECTS = true;
+// NOTE: setting this to "false" may cause some errors in the browser console that I can't be arsed to fix
+const SHOW_BOTH_INSPECTS = true;
 
 ("use strict");
 
@@ -47,8 +46,7 @@ function addButton(div) {
       }
     );
   };
-  if (DO_YOU_WANT_TO_SHOW_BOTH_INSPECTS) div.replaceChildren(button, newButton);
-  else div.replaceChildren(newButton);
+  SHOW_BOTH_INSPECTS ? div.replaceChildren(button, newButton) : div.replaceChildren(newButton);
 }
 function addDropdownItem(div) {
   if (div.querySelector("#newLink")) return;
@@ -73,8 +71,9 @@ function addDropdownItem(div) {
       }
     );
   };
-  if (DO_YOU_WANT_TO_SHOW_BOTH_INSPECTS) div.replaceChildren(inspectLink, newDropdownItem);
-  else div.replaceChildren(newDropdownItem);
+  SHOW_BOTH_INSPECTS
+    ? div.replaceChildren(inspectLink, newDropdownItem)
+    : div.replaceChildren(newDropdownItem);
 }
 
 function addInspect() {

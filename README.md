@@ -3,6 +3,7 @@ Userscript for web browser to easily generate console commands to inspect items 
 
 Adds native-looking buttons in the usual places on Steam Inventory items and Community Market listings that give you a 'csgo_econ_action_preview' console command you can paste into console ingame to inspect skins.
 
+
 ## How to Install
 1. Install 
    [Violentmonkey](https://violentmonkey.github.io/) /   [Tampermonkey](https://www.tampermonkey.net/) /   [FireMonkey (Firefox only)](https://addons.mozilla.org/en-US/firefox/addon/firemonkey/)    or other userscript extension of your choice to your web browser.
@@ -16,7 +17,15 @@ Adds native-looking buttons in the usual places on Steam Inventory items and Com
  **OR**  
 Go to [this link](https://github.com/pirssi/cs2-inspect/raw/main/cs2inspect.user.js) for the script and paste it manually into the 'New script' window (replacing the template code there).
 3. Done! 🎉
+
+
+
 ----
-###General notes
+
+
+## General notes
 The script was quickly scrambled together, and although I didn't seem to find any bigger problems, there may be some bugs or the occasional error in the browser console, so feel free to hit me up through the GitHub issues page or any of the links found on my [home page](https://pirss.in/) if you come across any. :)
-Your extension should also automatically check for updates to the script (unless you have it disabled), in case any updates are pushed to the script on this repo page.
+Your extension should also automatically check for updates to the script (unless you have it disabled), in case any updates are pushed to the script on this repo page.   
+ 
+P.S.,
+You can choose to either show both 'Inspect in Game...' for CS:GO and 'Inspect in CS2...' for CS2 (default), or only show the 'Inspect in CS2...' buttons by changing the variable at the beginning of the script (further explained in the script).
