@@ -1,7 +1,7 @@
 # Inspect in CS2
 Userscript for web browser to easily generate console commands to inspect items in Counter-Strike 2! ✨
 
-Adds native-looking buttons in the usual places on Steam Inventory items and Community Market listings that give you a 'csgo_econ_action_preview' console command you can paste into console ingame to inspect skins.
+Adds native-looking buttons in the usual places on Steam Inventory items and Community Market listings that copy a 'csgo_econ_action_preview' console command to your clipboard that you can paste into the console in-game to inspect skins.
 
 
 ## How to Install
